@@ -25,3 +25,5 @@ def extract_jpegs(filename):
     print(f"Extracted {i} JPEG images.")
 
 extract_jpegs('stream.raw')
+
+#ffmpeg -framerate 10 -i image_%05d.jpg -c:v libx264 -pix_fmt yuv420p output.mp4
